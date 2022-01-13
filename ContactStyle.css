@@ -102,7 +102,7 @@
   position: absolute;
 }
 body {
-  background: linear-gradient(90deg, rgb(127, 170, 114) 5%,rgb(164, 201, 147)  95%);
+  background: linear-gradient(90deg, rgb(126, 180, 197) 5%, rgb(166, 201, 235) 95%);
 }
 .dark-mode {
   background: linear-gradient(90deg, rgb(25, 26, 26) 5%, rgb(54, 58, 61) 95%);
