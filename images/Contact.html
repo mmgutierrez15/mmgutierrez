@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/Contact.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Contact_files/DarkMode.js"></script>
+    
+        
+        <title>Contact</title>
+    <link rel="stylesheet" href="./Contact_files/ContactStyle.css"></head>
+    <body>
+            <div class="topnav">
+                <a class="active" href="http://127.0.0.1:5500/Contact.html">Contact</a>
+                <a class="active" href="http://127.0.0.1:5500/Resume.html">Resume</a>
+                <a class="active" href="http://127.0.0.1:5500/Projects.html">Projects</a>
+                <a class="active" href="http://127.0.0.1:5500/Main.html">Home</a>
+              </div>
+            
+            <div class="topnav">
+                <button onclick="myFunction()">Matthew Gutierrez</button>
+              </div>
+            <section>
+                <div class="container">
+                    <form id="form" class="topBefore">
+                        <input id="name" type="text" placeholder="NAME">
+                        <input id="email" type="text" placeholder="E-MAIL">
+                        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                <input id="submit" type="submit" value="GO!">
+              </form>
+                </div>
+            </section>
+            <section>
+                <div class="container2"></div>
+            </section>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
